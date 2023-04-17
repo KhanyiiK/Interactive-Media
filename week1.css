@@ -1,0 +1,101 @@
+/* header */
+header{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+.navbar-nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+.navbar-nav ul li a{
+    text-decoration: none;
+    color: #d8b7ba;
+    text-transform: uppercase;
+}
+.navbar-nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #d8b7ba;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar-nav ul li:hover::after{
+    width: 100%;
+}
+.navbar-brand{
+    color: #d8b7ba;
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--Playfair);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d8b7ba;
+}
+.banner-title{
+    font-size: 6rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+.banner form{
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.search-input{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+.search-input::placeholder{
+    text-transform: capitalize;
+}
+.search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
